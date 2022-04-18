@@ -1,0 +1,9 @@
+.cookies-img{
+    transform: rotate(-30deg);
+    transform-origin: top right;
+    transition: 0.8s all ease-in-out;
+}
+
+.cookies-img.reveal{
+    transform: rotate(10deg);
+}
