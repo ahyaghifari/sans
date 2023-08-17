@@ -1,0 +1,38 @@
+[
+    {
+        "name" : "choco almond",
+        "image" : "choco-almond.png",
+        "category" : "bar",
+        "description" : "Introducing the 'Choco Almond' ice cream bar—an exquisite fusion of rich chocolate indulgence and the wholesome goodness of almonds. Enveloped in a luxurious coat of velvety chocolate, this delectable bar unveils a creamy center of chocolate ice cream that's been thoughtfully adorned with a generous sprinkling of roasted almond pieces. As you take your first delightful bite, the initial snap gives way to a medley of flavors and textures, where the deep cocoa notes harmonize with the satisfying crunch of almond."
+    },
+    {
+        "name" : "classic vanilla",
+        "image" : "classic-vanilla.png",
+        "category" : "bar",
+        "description" : "Step into nostalgia with our 'Classic Vanilla' ice cream bar, a timeless treat that pays homage to the purest of flavors. Encased in a delicate shell, this bar holds a heart of velvety vanilla ice cream that exudes comfort and familiarity. With each delightful bite, the creamy richness of the vanilla unfolds, taking you on a journey back to cherished memories and simple pleasures. "
+    },
+    {
+        "name" : "mangold",
+        "image" : "mangold.png",
+        "category" : "bar",
+        "description" : "Indulge in the epitome of sophistication with our masterpiece creation, the 'Mangold' ice cream bar—a harmonious blend of vibrant mango and the opulence of gold. Encased in a lustrous outer layer, this exquisite bar features a velvety mango ice cream core that captures the essence of sun-ripened sweetness. As you savor each luscious bite, delicate flakes of edible gold leaf delicately shimmer, adding a touch of elegance and extravagance to your sensory experience."
+    },
+    {
+        "name" : "3 color ball with fruits",
+        "image" : "3-color-ball-with-fruit.png",
+        "category" : "ball",
+        "description" : "Embark on a delightful taste adventure with our '3 Ball Ice Cream with Fruit' sensation. This exquisite ice cream brings together the best of both worlds, combining the creamy goodness of three distinct flavors elegantly swirled into perfectly balanced spheres. As you relish the velvety textures and flavors, you'll also discover a burst of nature's sweetness with an array of fresh, juicy fruits meticulously nestled within the creamy folds."
+    },
+    {
+        "name" : "chocolate crunchy",
+        "image" : "chocolate-crunchy.png",
+        "category" : "cone",
+        "description" : "Dive into the irresistible world of 'Chocolate Crunchy' ice cream, where luxurious cocoa notes intertwine with the satisfying allure of crispy textures. Indulge in the velvety embrace of premium chocolate ice cream, expertly infused with swirls of decadent fudge, and experience the symphony of delight as you encounter delicate yet tantalizing crunches with every spoonful. This delectable creation combines the classic charm of chocolate with an exciting twist of texture, offering a sensory journey that caters to your cravings for both smoothness and crunchiness."
+    },
+    {
+        "name" : "choco cookies",
+        "image" : "choco-cookies.png",
+        "category" : "cookies",
+        "description" : "Immerse yourself in the delightful world of 'Choco Cookies with Choco Chips' ice cream, where rich, velvety chocolate ice cream is generously studded with chunks of delectable chocolate cookies and an abundance of luscious choco chips. Each spoonful takes you on a journey of pure indulgence, as the harmonious blend of smooth chocolate and satisfying cookie crunch creates a symphony of flavors and textures that is both classic and utterly irresistible. Whether you're seeking a comforting treat or a moment of sheer bliss, this creation promises to satisfy your cravings with every heavenly bite."
+    }
+]

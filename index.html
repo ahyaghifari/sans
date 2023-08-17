@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sans</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+        theme: {
+            extend: {
+            colors: {
+                darkchoco: '#1A120B',
+                brown: '#3C2A21',
+                sawgrass: '#D5CEA3',
+                cream: '#E5E5CB'
+            },
+            fontFamily:{
+                'urbanist' : ['Urbanist', 'sans-serif']
+            }
+            }
+        }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="font-urbanist overflow-x-hidden">
+
+
+    <header id="header" class="h-screen flex justify-center items-center">
+        <div class="z-[10] flex flex-col items-end mt-16">
+            <h1 class="text-cream text-8xl text-shadow md:text-[130px] lg:text-[160px] xl:text-[240px]">sans</h1>
+            <h3 class="text-sawgrass text-right text-shadow md:text-lg xl:text-xl">classic <br> and <br> special  taste</h3>
+        </div>
+        <img id="images-header" src="assets/images/header-icecream.png" class="absolute w-[210px] rotate-[15deg] sm:w-[230px] md:w-[250px] lg:w-[350px] lg:rotate-[20deg] xl:w-[400px]" alt="">
+    </header>
+
+    <main class="bg-cream">
+        <section id="our-say" class="min-h-screen relative py-10 p-4 flex flex-col lg:grid lg:grid-cols-2">
+            <img id="our-say-image" src="assets/images/our-say-image.png" class="w-[200px] sm:w-[250px] self-center md:w-[270px] lg:w-[350px] xl:w-[420px] lg:self-start lg:place-self-center" alt="">
+            <div class="mt-5 sm:mt-7 lg:w-fit  ">
+                <h2 class="text-shadow text-cream text-4xl sm:text-5xl lg:text-7xl xl:text-9xl">our say</h2>
+                <p class="text-xs mt-3 w-3/4 text-sawgrass sm:w-1/2 sm:mt-5 sm:text-sm lg:text-base lg:mt-7 xl:text-xl">we give you ice cream with classic and wonderful taste.<br><br>Indulge in timeless flavors and savorthe essence of nostalgia throughour ice cream website, where classic recipes meeta touch of extraordinary,offering a symphony of special tastes that truly stand out.</p>
+            </div>
+            <img src="assets/svg/our-say-vector.svg" class="absolute right-0 bottom-0 w-full sm:w-3/4 md:w-1/2 xl:w-5/12" alt="">
+        </section>
+        <section id="what-the-extension" class="min-h-screen bg-cream p-4 flex flex-col justify-around lg:flex-row lg:items-center ">
+            <div>
+                <h2 class="text-3xl text-darkchoco text-shadow-2 sm:text-5xl md:w-2/6 md:text-6xl lg:w-1/2 xl:text-7xl">what the extension</h2>
+                <p class="w-3/4 mt-4 text-sm text-brown sm:text-base sm:w-1/2 md:text-lg lg:mt-10 lg:text-xl xl:mt-16">we are love making ice cream.we are trying so make ice cream for all generations. <br><br>
+                and we always follow the time.is not just classic but we pass the basics.</p>
+            </div>
+            <div class="relative flex items-center justify-center self-end mr-5 lg:self-center xl:self-end">
+                <img id="what-the-extension-image" src="assets/images/what-the-extension-image.png" class="w-[160px] z-[20] -translate-y-7 -translate-x-7 sm:w-[190px] lg:w-[250px] xl:w-[350px]" alt="">
+                <div id="what-the-extension-circle" class="w-[180px] h-[180px] bg-brown rounded-full absolute sm:w-[210px] sm:h-[210px] lg:w-[270px] lg:h-[270px] xl:w-[370px] xl:h-[370px]"></div>
+            </div>
+        </section>
+        <section id="ice-creams" class="min-h-screen p-4 bg-cream pt-16 lg:mt-32">
+            <h3 class="font-semibold text-3xl text-darkchoco text-shadow-2 text-center sm:text-4xl lg:text-5xl">our ice cream</h3>
+            <div class="ice-creams-category border-y border-brown py-2 mt-8 flex justify-around text-brown text-sm sm:w-10/12 sm:mx-auto lg:w-8/12 lg:text-base xl:text-lg">
+                <button class="ice-cream-filter-btn font-semibold">all</button>
+                <button class="ice-cream-filter-btn">bar</button>
+                <button class="ice-cream-filter-btn">ball</button>
+                <button class="ice-cream-filter-btn">cone</button>
+                <button class="ice-cream-filter-btn">cookies</button>
+            </div>
+            <div id="ice-creams-container" class="mt-2 pb-1 sm:w-10/12 sm:mx-auto lg:w-8/12 relative flex">
+                <button class="ice-cream-carousel-prev-btn text-brown active:text-darkchoco p-1 hidden sm:inline absolute self-center left-0 z-[10]">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8">
+                        <path fill-rule="evenodd"
+                            d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </button>
+                <div class="owl-carousel h-[45vh]">
+                </div>
+                <button class="ice-cream-carousel-next-btn text-brown active:text-darkchoco p-1 hidden sm:inline self-center right-0 absolute z-[10]">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-8 h-8">
+                        <path fill-rule="evenodd"
+                            d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </button>
+            </div>
+            <div class="flex justify-between border-b border-brown sm:w-10/12 sm:mx-auto lg:w-8/12 lg:-translate-y-10">
+                <button class="ice-cream-carousel-prev-btn text-brown active:text-darkchoco p-1 sm:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd"
+                            d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </button>
+                <p id="ice-cream-name-preview" class="font-semibold sm:text-3xl lg:text-4xl">-</p>
+                <button class="ice-cream-carousel-next-btn text-brown active:text-darkchoco p-1 sm:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
+                        <path fill-rule="evenodd"
+                                d="M16.28 11.47a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 01-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 011.06-1.06l7.5 7.5z"
+                                clip-rule="evenodd" />
+                    </svg>
+                </button>
+            </div>
+            <p id="ice-cream-description-preview" class="mt-2 text-brown text-xs sm:w-10/12 sm:mx-auto lg:w-8/12 sm:text-[13px] lg:-translate-y-10 lg:text-sm xl:text-base">
+                -
+            </p>
+        </section>
+        <section id="thanks-contact" class="min-h-screen bg-cream mt-20 flex flex-nowrap w-[200%]">
+            <div id="thanks" class="horizontal-panels p-4 min-h-screen w-1/2 relative lg:px-8">
+                <h3 class="font-semibold text-4xl text-darkchoco sm:mt-20 sm:text-6xl md:text-7xl lg:text-8xl">thanks</h3>
+                <p class="mt-3 sm:text-lg lg:text-xl lg:w-2/12 xl:text-2xl lg:mt-8">to you
+                    for came to
+                    our page.
+                    <br>
+                    we appreciate it
+                    so much</p>
+                    <p class="mt-3 sm:text-lg lg:text-xl xl:text-2xl">good night :) .</p>
+                    <img src="assets/svg/thanks-svg.svg" class="hidden sm:inline right-0 bottom-0 h-1/2 absolute md:h-3/4 lg:h-11/12" alt="">
+            </div>
+            <div id="contact" class="horizontal-panels min-h-screen p-4 w-1/2 bg-brown md:p-8">
+                <h3 class="font-semibold text-4xl text-cream md:text-6xl lg:text-7xl">contact</h3>
+                <form action="" method="post" class="text-sawgrass mt-14 md:text-lg lg:text-xl">
+                    <div class="flex flex-col w-8/12 lg:w-1/2 ">
+                        <label for="name">name</label>
+                        <input type="text" name="name" class="bg-transparent text-sawgrass border border-sawgrass rounded p-1 focus:outline-none" required>
+                    </div>
+                    <div class="flex flex-col w-8/12 lg:w-1/2 mt-5">
+                        <label for="email">email</label>
+                        <input type="email" name="email" class="bg-transparent text-sawgrass border border-sawgrass rounded p-1 focus:outline-none" required>
+                    </div>
+                    <div class="flex flex-col w-10/12 lg:w-8/12 mt-5">
+                        <label for="message">message</label>
+                        <textarea name="message" id="message" cols="30" rows="10" class="bg-transparent text-sawgrass border border-sawgrass rounded p-1 focus:outline-none" required></textarea>
+                    </div>
+                    <button type="submit" class="px-3 py-2 rounded bg-sawgrass text-brown mt-3 md:mt-6">send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-brown">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" >
+            <path fill="#E5E5CB" fill-opacity="1"
+                d="M0,128L30,144C60,160,120,192,180,202.7C240,213,300,203,360,186.7C420,171,480,149,540,154.7C600,160,660,192,720,192C780,192,840,160,900,154.7C960,149,1020,171,1080,192C1140,213,1200,235,1260,218.7C1320,203,1380,149,1410,122.7L1440,96L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z">
+            </path>
+        </svg>
+        <div class="bg-cream p-2 flex flex-col items-center">
+            <p class="text-darkchoco text-center sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">sans <br> by <a href="https://ahyaghifari.my.id" target="_blank" class="underline">ahyaghifari</a></p>
+            <p class="text-right text-xs mt-5 md:text-sm lg:text-base xl:text-lg">copyright2023 | All Right Reserved</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
