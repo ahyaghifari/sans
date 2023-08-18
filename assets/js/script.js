@@ -24,7 +24,7 @@ $(document).ready(function () {
                         <input type="hidden" class="ice-cream-name" value="${d.name}">
                         <input type="hidden" class="ice-cream-description" value="${d.description}">
                         <div class="w-[160px] xl:w-[190px] h-max">
-                            <img src="/assets/ice-creams/${d.image}" alt="">
+                            <img src="assets/ice-creams/${d.image}" alt="">
                         </div>
                     </div>`)
         });
