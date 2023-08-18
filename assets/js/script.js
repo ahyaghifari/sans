@@ -71,6 +71,25 @@ $(document).ready(function () {
         })
     })
 
+    let horizontalPanel = gsap.utils.toArray('.horizontal-panels')
+    mm.add('(min-width: 768px)', () => {
+
+    gsap.to(horizontalPanel, {
+        xPercent: -100 * (horizontalPanel.length - 1),
+        ease: "none",
+        scrollTrigger: {
+            trigger: '#thanks-contact',
+            // start: 'top top',
+            pin: true,
+            scrub: true,
+            snap: 1 / (horizontalPanel.length - 1),
+            end: () => {
+                document.querySelector('#thanks-contact').offsetWidth
+            }
+        }
+    })
+    })
+
     mm.add('(max-width: 768px)', () => {
         gsap.to('#images-header', {
             scrollTrigger: {   
@@ -210,23 +229,6 @@ $(document).ready(function () {
         appendIceCreams()
         $('.ice-cream-filter-btn').removeClass('font-semibold')
         $(this).addClass('font-semibold')
-    })
-
-    let horizontalPanel = gsap.utils.toArray('.horizontal-panels')
-
-    gsap.to(horizontalPanel, {
-        xPercent: -100 * (horizontalPanel.length - 1),
-        ease: "none",
-        scrollTrigger: {
-            trigger: '#thanks-contact',
-            // start: 'top top',
-            pin: true,
-            scrub: true,
-            snap: 1 / (horizontalPanel.length - 1),
-            end: () => {
-                document.querySelector('#thanks-contact').offsetWidth
-            }
-        }
     })
 
 
