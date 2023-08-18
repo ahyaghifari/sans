@@ -31,7 +31,7 @@ $(document).ready(function () {
         owl.owlCarousel('initialize')
     }
     
-    $.getJSON("/assets/ice-creams/data.json", function (data, textStatus, jqXHR) {
+    $.getJSON("assets/ice-creams/data.json", function (data, textStatus, jqXHR) {
         iceCreams = data
         filteredIceCreams = data
         appendIceCreams()
